@@ -143,10 +143,12 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-bottom: 15px;
+  font-size: 24px;
 }
 p {
   font-size: 16px;
 }
+/* Variable */
 .container {
   max-width: 1000px;
   margin: auto;
@@ -154,6 +156,7 @@ p {
 header {
   display: flex;
   max-width: 100%;
+  margin-top: 20px;
   justify-content: flex-end;
 }
 header nav {
@@ -172,18 +175,16 @@ header nav a:hover {
 .intro {
   display: flex;
   max-width: 100%;
+  margin: 20px 0px;
   height: 600px;
-  background: #f0ecec;
+  background: #F0ECEC;
 }
 .intro .intro-text {
   font-size: 40px;
-  text-align: ;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
-  align-items: ;
-  margin-bottom: ;
   padding: 50px;
 }
 .intro .intro-text .leo {
@@ -202,4 +203,58 @@ header nav a:hover {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+}
+.main-content {
+  margin: 50px 0px;
+  line-height: 18px;
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .top-content .text-content {
+  width: 45%;
+}
+.main-content .top-content .text-content li {
+  margin-top: 1px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.main-content .bottom-content {
+  margin: 20px 0px;
+}
+.main-content .bottom-content .text-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .bottom-content .text-bottom .table {
+  background: #F0ECEC;
+  padding: 20px;
+}
+.main-content .bottom-content .text-bottom .table h3 {
+  padding-bottom: 5px;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+}
+.main-content .bottom-content .text-bottom .table .names {
+  padding: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+.main-content .bottom-content .text-bottom .table .names img {
+  width: 20%;
+  margin-right: 20px;
+}
+.contact {
+  display: flex;
+}
+.contact .sep {
+  width: 20%;
+}
+.contact .sep p {
+  margin: 15px 0px;
+}
+.contact .sep .manhole {
+  width: 100%;
 }
