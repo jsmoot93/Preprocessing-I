@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	letter-spacing: 1px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,6 +55,156 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 24px;
+}
+
+p {
+	font-size: 16px;	
+}
+
+/* Variable */
+@bg-color: #F0ECEC;
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	max-width: 100%;
+	margin-top: 20px;
+	justify-content: flex-end;
+
+	nav { 
+		width: 30%;
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	
+		a:hover {
+			text-decoration: underline;
+			color: blue;
+		}
+	}
+}
+
+.intro {
+    display: flex;
+	max-width: 100%;
+	margin: 20px 0px;
+	height: 600px;
+	background: @bg-color;
+	
+	.intro-text {
+		font-size: 40px;
+		letter-spacing: 5px;
+		display: flex;
+		justify-content: center;
+		flex-flow: column;
+		padding: 50px;
+
+		.leo {
+			width: 50%;
+			margin-bottom: 20px;
+		}
+
+		.slogan {
+			margin-bottom: 50px;
+		}
+
+		button {
+			border: 1px double gray;
+			font-size: 16px;
+			background: gray;
+			color: white;
+			width: 30%;
+			height: 32px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+	}
+}
+
+.main-content {
+	margin: 50px 0px;
+	line-height: 18px;
+
+	.top-content {
+		display: flex;
+		justify-content: space-between;
+
+		.text-content {
+			width: 45%;
+
+			li {
+				margin-top:1px;
+				padding: 10px;
+				border: 1px solid lightgray;
+			}
+		}
+	}
+
+	.bottom-content {
+		margin: 20px 0px;
+
+		.text-bottom {
+			display: flex;
+			flex-direction: column;
+			
+			.table {
+				background: @bg-color;
+				padding: 20px;
+
+				h3 {
+					padding-bottom: 5px;
+					font-size: 18px;
+					border-bottom: 1px solid black;
+				}
+
+				.names {
+					padding: 20px;
+					border-bottom: 1px solid black;
+					display: flex;
+					align-items: center;
+
+					img {
+						width: 20%;
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
+ }
+
+ .contact {
+	display: flex;
+
+	.sep {
+		width: 20%;
+	
+		p {
+			margin: 15px 0px;
+		}
+
+		.manhole {
+			width: 100%;
+		}
+	}
+}
+
+
+
 
